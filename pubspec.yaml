@@ -1,0 +1,34 @@
+name: uaspemmob
+description: Aplikasi Sehat Lingkungan
+
+publish_to: 'none' # Disarankan untuk development, sesuaikan jika Anda ingin mempublikasikan.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.4
+  # Firebase dependencies
+  firebase_core: ^2.14.0  # Pastikan versi sesuai
+  firebase_auth: ^4.0.0  # Pastikan versi sesuai dengan kebutuhan
+  firebase_database: ^10.0.0  # Pastikan versi sesuai
+  shared_preferences: ^2.2.0  # Sesuaikan versi dengan yang terbaru
+  # provider: ^6.1.3  # Hapus jika tidak diperlukan atau gunakan jika diperlukan
+  # Add more dependencies if needed
+
+  # Untuk Icon pada iOS
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0     # Lints untuk memudahkan pengembangan
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/icon.png  # Jika Anda memiliki folder assets untuk gambar
